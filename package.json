@@ -8,5 +8,8 @@
 	"scripts": {
 		"start": "node .",
 		"test": "node testing.js"
+	},
+	"engines": {
+		"node": "16.3.0"
 	}
 }
