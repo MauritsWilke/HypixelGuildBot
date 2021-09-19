@@ -1,0 +1,12 @@
+{
+	"main": "src/index.js",
+	"dependencies": {
+		"dotenv": "^10.0.0",
+		"mineflayer": "^3.11.0",
+		"node-fetch": "^2.6.2"
+	},
+	"scripts": {
+		"start": "node .",
+		"test": "node testing.js"
+	}
+}

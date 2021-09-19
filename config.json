@@ -1,0 +1,10 @@
+{
+	"settings": {
+		"guild": "Bedwars",
+		"prefix": "!"
+	},
+	"spawnMessages": [
+		"/chat g",
+		"/f I_Like_Cats__"
+	]
+}
