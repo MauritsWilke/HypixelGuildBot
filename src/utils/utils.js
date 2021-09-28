@@ -1,22 +1,4 @@
 /**
- * Log a countdown
- * @param {Number} seconds 
- */
-
-function consoleClock(seconds) {
-	let timesRun = 0;
-	const countdown = setInterval(function () {
-		timesRun += 1;
-		if (timesRun === seconds) {
-			clearInterval(countdown);
-		}
-		process.stdout.write(`Attempting to relog in [${seconds - timesRun > 9 ? seconds - timesRun : `0${30 - timesRun}`}]\r`)
-
-	}, 1000);
-}
-
-
-/**
  * Purge X members of the guild
  * ! MADE TO WORK FOR THE BEDWARS GUILD 
  */
@@ -55,7 +37,6 @@ async function purgeGuild(members) {
 }
 
 module.exports = {
-	consoleClock,
 	purgeGuild
 }
 

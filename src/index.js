@@ -1,6 +1,5 @@
 require(`dotenv`).config()
 const mineflayer = require(`mineflayer`)
-const { consoleClock } = require(`./utils/utils`)
 const options = {
 	"host": "mc.hypixel.net",
 	"auth": "microsoft",
@@ -14,7 +13,6 @@ function bindEvents(bot) {
 	});
 	[`end`, `kicked`].forEach(event => {
 		bot.on(event, function () {
-			consoleClock()
 			setTimeout(relog, 30000);
 		})
 	})
