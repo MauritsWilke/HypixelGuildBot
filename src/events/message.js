@@ -24,7 +24,7 @@ module.exports = async (bot, jsonMSG) => {
 			const usernameList = await purgeGuild(15)
 			for (user of usernameList) {
 				bot.chat(`/g kick ${user.username} Guild Purge`)
-				await sleep(50)
+				await sleep(250)
 			}
 		}
 	}
